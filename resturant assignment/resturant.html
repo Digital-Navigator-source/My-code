@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Column Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to One Column Website</h1>
+            <p>Discover the best Italian cuisine in town.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>OUR MENU</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./pasta2.jpg" alt="Homemade Pasta">
+                <h3>Homemade Pasta</h3>
+                <p>Traditional hand-rolled pasta with choice of sauce.</p>
+                <span class="price">#18,000</span>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./pizza.jpg" alt="Wood-Fired Pizza">
+                <h3>Wood-Fired Pizza</h3>
+                <p>Authentic Neapolitan-style pizza.</p>
+                <span class="price">#30,000</span>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./pasta2.jpg" alt="Fresh Garden Salad">
+                <h3>Fresh Garden Salad</h3>
+                <p>A mix of fresh greens, vegetables, and your choice of dressing.</p>
+                <span class="price">#12,000</span>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="./pizza2.jpg" alt="Chocolate Lava Cake">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Decadent chocolate cake with a molten center.</p>
+                <span class="price">#15,000</span>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <img src="./chef.jpg" alt="Head Chef Mario">
+            <div class="about-text">
+                <p>Founded in 1995 by Chef Mario Rossi, our restaurant has been a cornerstone of authentic Italian cuisine. We pride ourselves on using only the freshest ingredients, sourced locally whenever possible.</p>
+                <p>Our mission is to bring the flavors of Italy to your table, with a modern twist that keeps our dishes exciting and innovative.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial active">
+                <p>"The best Italian food I've ever had! The pasta is to die for."</p>
+                <span>- Jane Doe</span>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing atmosphere and even better food. Highly recommend!"</p>
+                <span>- John Smith</span>
+            </div>
+            <div class="testimonial">
+                <p>"The pizza is out of this world. I'll definitely be back!"</p>
+                <span>- Sarah Johnson</span>
+            </div>
+            <button class="carousel-btn prev" onclick="prevTestimonial()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextTestimonial()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Via Roma, Florence, Italy</p>
+                <p><i class="fas fa-phone"></i> (+234) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@example.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+        </div>
+        <form class="reservation-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <textarea placeholder="Special Requests"></textarea>
+            <button type="submit">Make Reservation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2025 ONE COLUMN WEBSITE. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+    <style>
+        :root {
+            --primary-light: #f8f9fa;
+            --secondary-light: #e9ecef;
+            --primary-dark: #1a1a1a;
+            --secondary-dark: #2d2d2d;
+            --accent-color: #4a90e2;
+            --text-light: #212529;
+            --text-dark: #f8f9fa;
+        }
+
+        /* Dark mode toggle styles */
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-dark);
+            color: var(--text-dark);
+            border: 2px solid var(--accent-color);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .dark-mode-toggle:hover {
+            transform: scale(1.1) rotate(180deg);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Scroll effect */
+        .scrolled {
+            transform: translateY(100px) scale(0.8);
+            opacity: 0.7;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: var(--primary-dark);
+            color: var(--text-dark);
+        }
+
+        body.dark-mode .menu-item,
+        body.dark-mode .testimonial,
+        body.dark-mode .reservation-form {
+            background-color: var(--secondary-dark);
+            border-color: #3d3d3d;
+        }
+
+        body.dark-mode .btn,
+        body.dark-mode .order-btn {
+            background-color: var(--accent-color);
+            color: var(--text-dark);
+        }
+
+        /* Add smooth transitions */
+        body, .menu-item, .testimonial, button {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Updated navbar scroll effect */
+        #navbar.scrolled-nav {
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.9);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Rest of your existing CSS remains here */
+        /* ... (include previous CSS styles) ... */
+    </style>
+</head>
+<body>
+    <!-- Animated Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <!-- ... existing nav content ... -->
+    </nav>
+
+    <!-- ... rest of your HTML content ... -->
+
+    <script>
+        // Enhanced Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        function toggleDarkMode() {
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+            
+            // Change icon
+            const icon = darkModeToggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        }
+
+        // Scroll Effects
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            // Toggle scroll class for dark mode button
+            darkModeToggle.classList.toggle('scrolled', currentScroll > lastScroll && currentScroll > 100);
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled-nav', window.scrollY > 50);
+            
+            lastScroll = currentScroll;
+        });
+
+        // Initialize dark mode
+        document.addEventListener('DOMContentLoaded', () => {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+                darkModeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+
+        // Add click event to dark mode toggle
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

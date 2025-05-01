@@ -1,0 +1,112 @@
+        /* Basic Reset to ensure consistent styling across browsers */
+        body, h1, h2, h3, p, ul, li, nav {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        ul {
+            list-style: none; /* Remove bullet points from lists */
+        }
+        a {
+            text-decoration: none; /* Remove underlines from links */
+            color: inherit; /* Inherit text color */
+        }
+
+        /* Basic Body Styling */
+        body {
+            font-family: sans-serif; /* A common and readable font */
+            line-height: 1.6; /* Improves text readability */
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex; /* Arrange list items horizontally */
+            justify-content: center; /* Center the navigation links */
+            margin-top: 1rem;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ccc; /* Separator line */
+            padding-bottom: 0.5rem;
+        }
+
+        /* About Section Styling */
+#about {
+    background-color: #f9f9f9; /* A light gray background */
+    padding: 30px; /* Increased padding for more space */
+    margin-bottom: 30px; /* Increased margin */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    display: flex; /* Enable flexbox for layout */
+    align-items: center; /* Vertically align items in the center */
+    gap: 20px; /* Space between potential image and text */
+}
+
+#about h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #333; /* Stronger bottom border */
+    padding-bottom: 0.75rem;
+    flex-basis: 100%; /* Make the heading take full width initially */
+    text-align: center; /* Center the heading */
+}
+
+#about p {
+    line-height: 1.8; /* Improved readability */
+    flex-basis: 70%; /* Take up most of the width for text */
+}
+
+/* Let's add a placeholder for an image in the About section (you can add this to your HTML later if you want) */
+.about-image {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd; /* Placeholder gray */
+    border-radius: 50%; /* Make it circular */
+    flex-shrink: 0; /* Don't allow it to shrink below its size */
+}
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky; /* Stick to the bottom of the viewport */
+            bottom: 0;
+            width: 100%;
+        }

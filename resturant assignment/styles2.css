@@ -1,0 +1,27 @@
+.nav-list{
+  border: 1px solid;
+ width:900px;
+ background-color: lemonchiffon;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.nav-list a{
+    text-decoration: none;
+    margin: 25px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200px;
+    display: flex;
+    padding: 2px;
+}
+.nav-list a:hover{
+    background-color:lightblue;
+    color: red;
+    /* padding: 12px; */
+}
+.nav-list ul{
+    display: flex;
+}

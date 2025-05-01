@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Navigator's Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>The Digital Navigator's Journey</h1>
+        <p>Documenting My Adventures In Web Development</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+     <main>
+        <section id=  "about">
+           <h2>About Me</h2>
+           <h3>A Novice's Expedition into the Digital Realm</h3>
+            <p>Hi there! My name is The Digital Navigator, and I'm embarking on a journey to learn web development. This website is where I'll be sharing
+                my progress, challenges, and discoveries as I learn HTML, CSS, JavaScript, and beyond.
+                My goal is not just to learn but also to connect with other developers, share knowledge, and build a community of learners and share the
+                resources I find helpful.
+                My goal is to build practical web applications and eventually contribute to open-source projects.
+                Join me as I take my first steps into the exciting world of coding!
+            </p>
+        </section>
+
+        <section id="blog">
+            <h2>Latest Explorations</h2>
+            <article>
+                <h3>My Introduction To HTML and CSS (CSS3)</h3>
+                <p>Today, I learned about the basic structure of an HTML document. I discovered the importance of the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags, and how they help organize content on a webpage.
+                    I also learned about the significance of semantic HTML and how it improves accessibility and SEO. I practiced creating headings, paragraphs, and lists, and I can't wait to dive deeper into HTML elements in my next post.
+                    I also learned about the importance of using comments in my code to keep track of my progress and thoughts. I can't wait to share more as I continue my journey!</p>
+                </p>
+                <a href="#">Read More</a>
+            </article>
+            <p><a href="#">View All Posts</a></p>
+        </section>
+        
+        <section id="resources">
+            <h2>Learning Resources</h2>
+            <p>Here are some resources that have been helpful in my learning journey, categorized by topic: <br>
+                All of these are free and open-source, and I encourage you to check them out if you're also learning web development.
+            I will be adding more resources as I discover them, so stay tuned!</p>
+            </p>
+        
+            <h3>Foundational Web Development</h3>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/">freeCodeCamp Responsive Web Design</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Docs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS Docs</a></li>
+                <li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a></li>
+            </ul>
+        
+            <h3>JavaScript Fundamentals</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript Docs</a></li>
+                <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy JavaScript</a></li>
+                <li><a href="https://javascript.info/">JavaScript.info</a></li>
+            </ul>
+            <p>More resourses coming soon</p>
+            </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>As I learn and build projects, I'll showcase them here.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="socal-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="#"><i class="fab fa-discord"></i> Discord</a>
+        </div>
+            <p>If you have any questions, suggestions, or just want to say hi, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section> 
+    </main>
+    <footer>
+        <p>&copy; 2023 The Digital Navigator. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </body>
+
+</body>
+</html>

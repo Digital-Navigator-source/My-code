@@ -1,0 +1,568 @@
+/* Header section */
+header {
+    background: linear-gradient(to right, #375378, #7e57c2); /* Example gradient */
+    color: #f0f0f0; /* Light text color */
+    padding: 1rem 2rem; /* Padding around the header */
+    text-align: center; /* Center the title */
+    margin: 0; /* Remove default margin */
+    position: relative; /* For absolute positioning of the title */
+    overflow: hidden; /* To contain floated elements */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif; /* Using one of our heading fonts */
+    font-size: 140px; /* Adjust size as needed */
+    margin-bottom: 0.5rem; /* Space between title and nav */
+    margin-top: -20px; /* Space from the top of the header */
+    font-weight: 700; /* Bold weight for the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    position: relative; /* For absolute positioning of the title */
+    z-index: 1; /* Ensure title is above the gradient */
+    padding: 0 20px; /* Optional padding for the title */
+}
+
+header p {
+    font-family: 'Montserrat', sans-serif; /* Using one of our heading fonts */
+    font-size: 20px; /* Adjust size as needed */
+    margin-bottom: 1rem; /* Space between title and nav */
+    font-weight: 300; /* Light weight for the subtitle */
+    padding: 30px 0; /* Space between title and nav */
+}
+
+header ul {
+    list-style: none;
+    padding: 20px 0; /* Space between title and nav */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the nav items vertically */
+    gap: 1rem; /* Space between nav items */
+}
+
+header li {
+    margin: 0 1rem;
+}
+
+header a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif; /* Using one of our heading fonts */
+    font-weight: 500; /* Medium weight for the links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.329); /* Slightly transparent white on hover */
+    border-radius: 10px; /* Optional rounded corners on hover */
+}
+
+
+/* About Section */
+#about {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 2rem; /* Add some padding around the content */
+    margin-bottom: 2rem; /* Spacing below the section */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.637); /* Subtle shadow */
+    text-align: center; /* Center the content within the section */
+    position: relative; /* For positioning the lines */
+    padding: 3rem; /* Increase padding to make space for lines */
+}
+
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem; /* Impactful but more manageable */
+    color: #375378; /* Use our primary blue */
+    margin-bottom: 0.75rem; /* Adjust spacing */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #7e57c2;
+    display: inline-block;
+    margin-top: 0; /* Reset top margin */
+}
+
+#about h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem; /* Clear secondary heading */
+    color: #7e57c2; /* Use our secondary purple */
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 1rem; /* More readable body text */
+    line-height: 1.7; /* Improved line height for readability */
+    color: #333;
+    text-align: left;
+}
+
+#about::before,
+#about::after {
+    content: '';
+    position: absolute;
+    width: 2px; /* Width of the lines */
+    background-color: #7e57c2; /* Our secondary purple for the lines */
+    top: 2rem; /* Adjust top position */
+    bottom: 2rem; /* Adjust bottom position */
+}
+
+#about::before {
+    left: 1rem; /* Adjust left position */
+}
+
+#about::after {
+    right: 1rem; /* Adjust right position */
+}
+
+
+/* Blog section */
+#blog {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 2rem; /* Add padding around the content */
+    margin-bottom: 2rem; /* Spacing below the section */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.637); /* Subtle shadow */
+    text-align: center; /* Center the main heading and "view all" link */
+}
+
+#blog h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem; /* Adjust size */
+    color: #375378; /* Primary blue */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #7e57c2; /* Secondary purple underline */
+    display: inline-block;
+}
+
+#blog article {
+    background-color: #fff; /* White background for each post */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Lighter shadow for posts */
+    text-align: left; /* Left-align post content */
+}
+
+#blog article h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem; /* Adjust size */
+    color: #7e57c2; /* Secondary purple */
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+#blog article p {
+    font-size: 1rem; /* Body text size */
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#blog article a {
+    color: #007bff; /* A bright blue for the link */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#blog article a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+#blog > p a { /* Style for the "View All Posts" link */
+    color: #375378; /* Primary blue */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#blog > p a:hover {
+    color: #7e57c2; /* Secondary purple on hover */
+    text-decoration: underline;
+}
+
+
+/* Resoure's section */
+#resources {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left for better readability with categories */
+    padding: 3rem 1rem; /* Add left and right padding */
+    position: relative;
+}
+
+#resources h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #375378;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #7e57c2;
+    display: inline-block;
+    text-align: center; /* Center the main heading */
+    width: 100%; /* Make the heading span the full width */
+    font-weight: 700; /* Bold weight for the main heading */
+}
+
+#resources p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center the introductory paragraph */
+    font-weight: 300; /* Light weight for the paragraph */
+}
+
+#resources h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #555; /* A slightly darker color for sub-headings */
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #eee; /* Subtle line under category heading */
+    padding-bottom: 0.25rem;
+    text-align: left;
+    font-weight: 500; /* Medium weight for sub-headings */
+    text-transform: uppercase; /* Optional: make sub-headings uppercase for emphasis */
+}
+
+#resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove horizontal centering for left alignment */
+    margin-bottom: 1rem; /* Add some space below each list */
+}
+
+#resources li {
+    padding: 0.5rem 0; /* Reduced padding for more compact list */
+    border-bottom: 1px solid #ddd; /* Lighter separator */
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+#resources li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+    margin-bottom: 0; /* Remove margin from the last item */
+}
+
+#resources li a {
+    color: #375378;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-size: 1rem; /* Adjusted for better readability */
+}
+
+#resources li a:hover {
+    color: #7e57c2;
+    font-weight: 500; /* Slightly bolder on hover */
+    transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease; /* Smooth transition for weight change */
+}
+
+
+/* Project Section */
+#projects {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 2rem; /* Add padding */
+    margin-bottom: 2rem; /* Spacing below */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the content initially */
+}
+
+#projects h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem; /* Adjust size */
+    color: #375378; /* Primary blue */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #7e57c2; /* Purple underline */
+    display: inline-block;
+}
+
+#projects p {
+    font-size: 1.2rem; /* Slightly larger placeholder text */
+    line-height: 1.6;
+    color: #555; /* Secondary text color */
+    padding: 1rem; /* Add some padding around the text */
+    border: 1px dashed #ccc; /* Optional: dashed border to indicate placeholder */
+    border-radius: 4px; /* Optional: rounded corners for the border */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #375378;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #7e57c2;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.socal-links {
+    margin-bottom: 2rem;
+}
+
+.socal-links a {
+    display: inline-block;
+    color: #f9f9f9; /* White text for better contrast on brand colors */
+    padding: 0.75rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.socal-links i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.socal-links a:nth-child(1) { /* Facebook */
+    background-color: #1877F2;
+}
+
+.socal-links a:nth-child(1):hover {
+    background-color: #1359B8; /* Darker shade of Facebook blue */
+}
+
+.socal-links a:nth-child(2) { /* Instagram */
+    background-color: #C13584; /* Solid purple-pink */
+}
+
+.socal-links a:nth-child(2):hover {
+    background-color: #9A2B69; /* Darker shade of Instagram pink */
+}
+
+.socal-links a:nth-child(3) { /* WhatsApp */
+    background-color: #25D366;
+}
+
+.socal-links a:nth-child(3):hover {
+    background-color: #1DA851; /* Darker shade of WhatsApp green */
+}
+
+.socal-links a:nth-child(4) { /* Discord */
+    background-color: #5865F2;
+}
+
+.socal-links a:nth-child(4):hover {
+    background-color: #4752C4; /* Darker shade of Discord blue */
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Prevent padding from increasing the element's total width */
+    font-size: 1rem;
+}
+
+#contact textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#contact button[type="submit"] {
+    background-color: #7e57c2;
+    color: #f9f9f9;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #375378;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #f0f0f0; /* Light text color */
+    padding: 1rem 2rem; /* Add some padding */
+    text-align: center; /* Center the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-top: 2rem; /* Add some space above the footer to separate it from the main content */
+}
+
+footer p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header h1 {
+        font-size: 50px; /* Smaller header font size for mobile */
+        margin-top: 0; /* Adjust top margin */
+        margin-bottom: 0.25rem;
+        padding: 0 10px;
+    }
+
+    header p {
+        font-size: 16px; /* Smaller subtitle font size */
+        padding: 15px 0;
+        margin-bottom: 0.5rem;
+    }
+
+    header ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        padding: 10px 0;
+        gap: 0.5rem;
+    }
+
+    header li {
+        margin: 0; /* Remove side margins from list items */
+        width: 100%; /* Make each item take full width */
+        text-align: center; /* Center the links */
+    }
+
+    header a {
+        display: block; /* Make links block-level for full width and padding */
+        padding: 0.75rem 0;
+        border-radius: 0; /* Remove rounded corners on mobile nav */
+    }
+
+    /* About Section adjustments */
+    #about h2 {
+        font-size: 3rem; /* Smaller "About Me" heading */
+        margin-bottom: 0.5rem;
+    }
+
+    #about h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #about::before,
+    #about::after {
+        display: none; /* Hide the vertical lines on smaller screens */
+    }
+
+    /* Blog Section adjustments */
+    #blog h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #blog article h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Resources Section adjustments */
+    #resources h2 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #resources h3 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Projects Section adjustments */
+    #projects h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #projects p {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    /* Contact Section adjustments */
+    #contact h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .socal-links {
+        display: flex;
+        flex-direction: column; /* Stack social links vertically */
+        align-items: center; /* Center them */
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .socal-links a {
+        width: 100%; /* Make social links take full width */
+        text-align: center;
+    }
+
+    #contact form {
+        padding: 1rem; /* Add some padding to the form on mobile */
+    }
+
+    #contact label {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea,
+    #contact button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #contact textarea {
+        rows: 3; /* Adjust textarea height on mobile */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 0.75rem 1rem;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+    }
+}
